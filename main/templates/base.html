@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock title %}</title>
+    {% block styles %}{% endblock %}
+    <link rel="stylesheet" href="{% static "styles/header.css" %} ">
+    </head>
+  <body>
+    
+<header id="header" class="header">
+  <div class="header-container">
+    <div class="header-items">
+      <div class="header-left">
+        <a href="/" class="header-logo">
+          <img src="https://via.placeholder.com/50x50" alt="">
+        </a>
+        <ul class="nav">
+          <li><a href="#" class="nav-link">Каталог</a></li>
+          <li><a href="#" class="nav-link nav-link-active">Топы</a></li>
+          <li><a href="#" class="nav-link nav-link-active">Форум</a></li>
+          <li><a href="#" class="nav-link nav-link-active nav-link-search">Поиск</a></li>
+          <li><a href="#" class="nav-link nav-link-active nav-link-search btn-log-on-styles ">Войти</a></li>
+        </ul>
+      </div>
+
+      <div class="header-right">
+        <form class="search-form" role="search">
+          <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
+        </form>
+        <a href="#" class="btn-log-on">Войти</a>
+
+      <!-- <div class="dropdown-menu-container">
+        <a href="#" class="profile-link" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="profile-image">
+        </a>
+        <ul class="menu">
+          <li><a class="menu-item" href="#">New project...</a></li>
+          <li><a class="menu-item" href="#">Settings</a></li>
+          <li><a class="menu-item" href="#">Profile</a></li>
+          <li><hr class="menu-divider"></li>
+          <li><a class="menu-item" href="#">Sign out</a></li>
+        </ul>
+      </div> -->
+
+
+
+      </div>
+    </div>
+  </div>
+</header>
+
+{% block content %}{% endblock content %}
+
+
+{% block scripts %}{% endblock %}
+<script src="{% static "scripts/header.js" %}"></script>
+
+  </body>
+</html>

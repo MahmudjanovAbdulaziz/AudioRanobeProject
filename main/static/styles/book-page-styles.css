@@ -1,0 +1,424 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+
+main {
+    margin-top: 85px;
+    overflow-x: hidden;
+}
+
+.container .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+.container {
+    margin: 0 auto;
+}
+
+
+
+/* левая колона для обложки книги и тд */
+
+.left-col {
+    flex: 0 0 25%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.left-col .left-col-card{
+    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-col .left-col-images img{
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.left-col .left-col-btn{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.left-col .left-col-btn a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1976d2;
+    border: 1px solid #1976d2;
+    border-radius: 8px;
+    width: 230px;
+    height: 33px;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+/* Эффекты при наведении */
+.left-col .left-col-btn a:hover {
+    background-color: #005bb5;
+    border-color: #005bb5;
+    color: #fff;
+}
+
+/* Эффекты при активном состоянии */
+.left-col .left-col-btn a:active {
+    background-color: #004494;
+    border-color: #004494;
+    color: #e0e0e0;
+}
+
+/* Эффекты при фокусе (например, при навигации с клавиатуры) */
+.left-col .left-col-btn a:focus {
+    outline: 2px solid #004494;
+    outline-offset: 2px;
+}
+
+.left-col .left-col-btn.left-col-btn-read:hover {
+    background-color: #005bb5;
+}
+
+.left-col .left-col-btn .left-col-btn-bookmarks:hover {
+    background-color: #2e7d32;
+}
+
+.left-col .left-col-btn .left-col-btn-complain:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+
+
+
+/* главная колона основного контента */
+
+.main-col {
+    flex: 0 0 55%;
+    font-style: italic;
+    font-size: 16px;
+
+}
+
+.info-about-book{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-about-book p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name-book-and-type {
+    display: flex;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+
+.name-book-and-type p{
+    color: #676767;
+    padding-left: 5px;
+}
+
+
+/* раздел для описании, глав, жанров */
+
+.description-book{
+    padding-top: 50px;
+}
+
+.description-about-book-and-chapters .genres{
+    padding-top: 25px;
+}
+
+.description-about-book-and-chapters .genres  a{
+    text-decoration: none;
+    margin: 3px;
+    padding: 5px;
+    color: #676767;
+    border: 1px solid #676767;
+    border-radius: 20px;
+}
+
+.book-chapters{
+    padding-top: 25px ;
+}
+
+.book-chapters a{
+    margin: 6px;
+    text-decoration: none;
+}
+
+
+
+.book-chapters a:hover{
+    background-color: #f1f1f19a;
+    border: 8px solid #f1f1f19a;
+    border-radius: 9px;
+    padding: 5px;
+    transition: background-color 0.3s,  color 0.3s;
+}
+
+.dont-active{
+    color: #333;
+}
+
+.active {
+    color: #1976d2;
+    border: 1 px solid #fff;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1976d2;    
+}
+
+
+
+.alt-name {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* .comments .send-comment input{
+    width:90%;
+    height: 50px;
+    border: 1px solid #676767;
+    border-radius: 10px;
+} */
+.comments {
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.comments h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.send-comment {
+    display: flex;
+    flex-direction: row;
+}
+
+.send-comment textarea {
+    width: 800px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+    height: 100px;
+}
+
+
+
+.send-comment .btn-send-comment {
+    padding: 10px;
+    border: none;   
+    border-radius: 10px;
+    background-color: #1976d2;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-comment button:hover {
+    background-color: #155a9c;
+}
+
+.items-in-the-bottom-of-comments{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.items-in-the-bottom-of-comments .col-vo-words{
+    margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+.posted-comment-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.posted-comment-container-not-main {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: flex-start;
+}
+
+.posted-comment-container-not-main-my-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 50px;
+    position: relative;
+}
+
+.posted-comment-container-not-main-my-comment::before {
+    content: "";
+    display: block;
+    width: 80%;
+}
+
+
+
+
+.avatarka img {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.user-nickname {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user-nickname p {
+    margin-left: auto;
+}
+
+.posted-comment {
+    border: 2px solid #f1f1f1;
+    border-radius: 7px;
+    background-color: #f1f1f1;
+    padding: 15px;
+}
+
+.posted-comment .user-nickname {
+    padding-bottom: 8px;
+}
+
+.like-dislike-answers-this-comment {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.like-dislike-answers-this-comment p {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+.like-dislike-answers-this-comment a {
+    padding-left: 5px;
+}
+
+.posted-comment-container-not-main-my-comment .avatarka {
+    order: 2;
+    margin-left: 10px;
+}
+
+/* .my-comment .posted-comment-for-sort {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+} */
+
+
+
+/* правая колона для рекомендаций по похожим тайтлам */
+
+.right-col {
+    flex: 0 0 19%;
+    margin-right: 20px;
+    padding-top: 4%;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.right-col-padding{
+    padding: 3%;
+}
+
+.right-col .similar{
+    display: flex;
+    flex-direction: row;
+    padding-top: 12%;
+}
+
+.right-col .similar .like-and-dislike{
+    display: flex;
+    align-items: center;
+}
+
+.right-col .similar .like-and-dislike p{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.similar .img img{
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+
+
+.right-col .info-and-add{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+    align-items: center;
+}
+
+.right-col .info-and-add a{
+    margin-left: auto;
+    text-decoration: none;
+    color: #1976d2;
+}
+
+.right-col .info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+.info .like-and-dislike{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+@media (max-width:1024px){
+    .left-col{
+        display: block;
+        flex: 0 0 80%;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    
+}

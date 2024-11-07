@@ -1,0 +1,427 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+h2 {
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin-top: 70px;
+}
+
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.section {
+    padding: 20px;
+}
+
+.section h2 {
+    margin-top: 0;
+    padding-left: 1%;
+}
+
+.catalog {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.catalog::-webkit-scrollbar {
+    display: none;
+}
+
+.book-card {
+    flex: 0 0 auto;
+    width: 200px;
+    margin: 0 10px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    /* overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; */
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #fff;
+    border-radius: 15px;
+}
+
+.book-card .details {
+    padding: 15px;
+}
+
+.book-card .details h2 {
+    margin: 0 0 10px 0;
+
+}
+
+.book-card .details .genres {
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #676767;
+    color: #555;
+    padding-bottom: 12px;
+}
+
+
+
+.book-card .details p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0 0 10px 0;
+}
+
+.book-card .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.book-card .footer .date {
+    margin-left: 10px;
+}
+
+.book-card .footer .likes {
+    display: flex;
+    align-items: center;
+}
+
+.book-card .footer .likes i {
+    color: red;
+    margin-right: 5px;
+}
+
+.second-section{
+    padding: 20px;
+}
+
+.card-book{
+    display: flex;
+    padding: 5px;
+    background: #f8f9fa;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-book h2{
+    padding: 3px;
+}
+
+.card-book img{
+    border: 3px solid #f8f9fa;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.col svg{
+    width: 34px;
+}
+
+.col a{
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.col .card-book-sort-h2{
+    padding-top: 15px;
+    padding-left: 6px;
+}
+
+.container .row .col .card-book .genres {
+    margin-left: 5px;
+}
+
+.container .row .col .card-book .genres .genres-tag-a{
+text-decoration: none;
+color: #6b6b6b;
+border: 1px solid #676767;
+border-radius: 6px;
+padding: 1px;
+}
+
+.genres a {
+    display: inline-block;
+    padding-bottom: 4%;
+}
+
+
+.container .row .col .card-book  p {
+    color: #818181;
+}
+
+
+
+
+.book-card .details .genres .genres-tag-a{
+    text-decoration: none;
+    color: #6b6b6b;
+    margin: 1px;
+    border: 1px solid #676767;
+    border-radius: 6px;
+    padding: 1px;
+}
+
+
+
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+
+.dropdown-menu-container {
+  text-align: end;
+  position: relative; /* Добавлено для контекстного позиционирования */
+}
+
+.profile-link {
+  display: block;
+  color: var(--bs-body-color);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.profile-image {
+  border-radius: 50%;
+}
+
+.menu {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    display: none;
+    z-index: 1000;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 130px;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu-item {
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    background-color: white;
+    font-size: 0.875rem;
+}
+
+.menu-item:hover {
+  background-color: #f8f9fa;
+}
+
+.menu-divider {
+  margin: 4px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.nav .nav-link-search {
+    display: none;
+}
+
+.dropdown-menu-container:hover {
+    .menu {
+        display: block;
+    }
+}
+
+.none {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media(max-width:1024px){
+    .menu {
+        left: -50% ;
+    }
+    .container .row .col .card-book .genres .genres-tag-a {
+        border: 1px solid #676767;
+    }
+    .book-card .details .genres .genres-tag-a {
+            border: 1px solid #676767;
+    }
+    .container .row {
+        display: flex;
+        flex-direction: row;    
+    }
+    .container .row .col .card-book{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    
+    .container {
+        flex-direction: row;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .col {
+        flex: 1 1 100%;
+
+    }
+
+    .container .row .col .card-book .genres .genres-tag-a {
+        border: 1px solid #676767;
+    }
+
+    .book-card .details .genres .genres-tag-a {
+    border: 1px solid #676767;
+    }
+    .menu {
+        left: -40px;
+        top: 50px;
+    }
+
+
+
+}
+
+
+@media (max-width: 660px) {
+    .search-form {
+        display: none;
+    }
+
+    .nav .nav-link-search {
+        display: flex;
+    }
+    
+    .header-right .btn-log-on {
+        display: none;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px){
+ .header-right .btn-log-on{
+    display: none;
+ }
+ .nav .btn-log-on-styles{
+    margin-left: 5px;
+ }
+
+ .dropdown-menu-container{
+    margin-right: 10px;
+ }
+
+ .card-book-information .genres .genres-tag-a{
+    margin-top: 3px;
+ }
+
+}
+
+@media (max-width: 375px) {
+
+    header{
+        display: block;
+        position: absolute;
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .dropdown-menu-container {
+        display: block;
+    }
+
+    .card-book {
+        display: flex;
+        flex-direction: column;
+    }
+    .second-section{
+        padding: 0;
+    }
+
+}

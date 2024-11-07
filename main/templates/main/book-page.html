@@ -1,0 +1,335 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}О (книге){% endblock title %}
+{% block styles %}<link rel="stylesheet" href="{% static "styles/book-page-styles.css" %}">{% endblock styles %}
+    
+
+
+
+
+
+      
+{% block content %}
+
+    <main>
+        <div class="container">
+            <div class="row">
+
+                <div class="left-col">
+                    <div class="left-col-card">
+                        <div class="left-col-images">
+                            <img src="https://via.placeholder.com/240x360" alt="240x360">
+                        </div>
+                        <div class="left-col-btn">
+                            <a href="#" class="left-col-btn-read"> Читать</a>
+                            <a href="#" class="left-col-btn-bookmarks">В закладки</a>
+                            <a href="#" class="left-col-btn-complain">Пожаловаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="main-col">
+
+              
+
+
+                    <div class="helpful-information-about-book">
+                        <div class="name-book-and-type">
+                            <h1>Название книги 1</h1>  
+                            <p>Роман</p>
+                        </div>
+                        <div class="info-about-book">
+                            <div class="chapters"><p>Главы</p> <p>12</p></div>
+                            <div class="likes"><p>Лайки</p><p><img src="images/like.svg" width="15px"> 535</p></div>
+                            <div class="views"><p>Просмотры</p><p><img src="images/views.svg" width="15px"> 3398</p></div>
+                            <div class="status"><p>Статус</p><p>Онгоинг</p></div>                 
+                            <div class="translate"><p>Перевод</p><p><img src="images/translate.svg" width="15px"> Продолжается</p></div>       
+                        </div>                  
+                    </div>
+
+                    <div class="book-chapters">
+                        <a href="#" class="active">Описание</a>
+                        <a href="#" class="dont-active ">Главы (12)</a>
+                    </div>
+
+                    <div class="description-about-book-and-chapters">
+                        <div class="description-book"> 
+                            <p>Это большое описание книги номер1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corrupti aut molestiae! Temporibus odit dicta iusto maxime voluptatem quasi vitae natus inventore quod. Doloribus ducimus, facilis eveniet beatae voluptates, corrupti magni rerum veritatis magnam ratione labore quo fuga modi.</p>
+                            <p>Это большое описание книги номер1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corrupti aut molestiae! Temporibus odit dicta iusto maxime voluptatem quasi vitae natus inventore quod. Doloribus ducimus, facilis eveniet beatae voluptates, corrupti magni rerum veritatis magnam ratione labore quo fuga modi.</p>
+                            <p>Это большое описание книги номер1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corrupti aut molestiae! Temporibus odit dicta iusto maxime voluptatem quasi vitae natus inventore quod. Doloribus ducimus, facilis eveniet beatae voluptates, corrupti magni rerum veritatis magnam ratione labore quo fuga modi.</p>
+                            <p>Это большое описание книги номер1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corrupti aut molestiae! Temporibus odit dicta iusto maxime voluptatem quasi vitae natus inventore quod. Doloribus ducimus, facilis eveniet beatae voluptates, corrupti magni rerum veritatis magnam ratione labore quo fuga modi.</p>
+                            <p>Это большое описание книги номер1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corrupti aut molestiae! Temporibus odit dicta iusto maxime voluptatem quasi vitae natus inventore quod. Doloribus ducimus, facilis eveniet beatae voluptates, corrupti magni rerum veritatis magnam ratione labore quo fuga modi.</p>
+                            <p>Это большое описание книги номер1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corrupti aut molestiae! Temporibus odit dicta iusto maxime voluptatem quasi vitae natus inventore quod. Doloribus ducimus, facilis eveniet beatae voluptates, corrupti magni rerum veritatis magnam ratione labore quo fuga modi.</p>
+                            <p>Это большое описание книги номер1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia in corrupti aut molestiae! Temporibus odit dicta iusto maxime voluptatem quasi vitae natus inventore quod. Doloribus ducimus, facilis eveniet beatae voluptates, corrupti magni rerum veritatis magnam ratione labore quo fuga modi.</p>
+                                                        
+                        </div>
+
+                        <div class="genres">
+                            <a href="#">Романтика</a><a href="#">Мистика</a><a href="#">Детектив</a><a href="#">Сверхестественное</a><a href="#">Школа</a><a href="#">Магия</a>
+                        </div>
+
+                        <div class="alt-name">
+                          <span><b>Альтерантивное названия:</b></span><br>
+                          <span>Последний авантюрист/The Last Adventurer / 최후의 모험가 / 메이플스토리 : 최후의 모험가</span>
+                        </div>
+
+                    </div>
+
+                    <div class="comments">
+                      <h2>Коментарии</h2>
+                      <div class="send-comment">
+                        <form action="" method="get">
+                            <textarea name="" id="" placeholder="Отправить сообшение"></textarea>
+                            <div class="items-in-the-bottom-of-comments">
+                              <div class="comments-btn">
+                                <button class="btn-send-comment" type="submit">Отправить</button>
+                              </div>
+                              <div class="col-vo-words">
+                                <p>0/500</p>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                     
+
+                      <div class="book-chapters">
+                        <a href="#" class="active">Новые</a>
+                        <a href="#" class="dont-active ">Популярные</a>
+                    </div>
+
+                    
+
+
+
+
+
+                    <div class="posted-comment-container">
+                        <div class="posted-comment-container-not-main">
+                                                          <div class="avatarka">
+                                                            <img src="https://via.placeholder.com/50x50" alt="">
+                                                          </div>
+                                                          <div class="posted-comment-for-sort" style="background-color: none;">
+                                                            <div class="posted-comment">
+                                                              <div class="user-nickname"><h3>ReYanDe</h3> <p>два дня назад</p></div>
+                                                              <div class="comment-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam! Impedit asperiores, autem ipsum officiis assumenda error laborum nobis eius nemo adipisci earum, recusandae tempora libero at ullam? Facilis, ad?</p></div>
+                                                            </div>
+                                                            <div class="like-dislike-answers-this-comment">
+                                                              <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                                                              <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                                                              <a href="#"><img src="images/answer.svg" alt=""></a>
+                                                              <a href="#"><img src="images/chat.svg" alt=""></a>
+                                                            </div>
+                                                          </div>
+                        </div>
+              
+                      <div class="posted-comment-container-not-main-my-comment">
+                      <div class="avatarka">
+                        <img src="https://via.placeholder.com/50x50" alt="">
+                      </div>
+                      <div class="posted-comment-for-sort">
+                        <div class="posted-comment">
+                        <div class="user-nickname"><h3>ReYanDe</h3> <p>два дня назад</p></div>
+                        <div class="comment-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam! Impedit asperiores, autem ipsum officiis assumenda error laborum nobis eius nemo adipisci earum, recusandae tempora libero at ullam? Facilis, ad?</p></div>
+                        </div>
+                        <div class="like-dislike-answers-this-comment">
+                        <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                        <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                        <a href="#"><img src="images/answer.svg" alt=""></a>
+                        <a href="#"><img src="images/chat.svg" alt=""></a>
+                        </div>
+                      </div>
+                      </div>
+                
+                          <div class="posted-comment-container-not-main">
+                          <div class="avatarka">
+                            <img src="https://via.placeholder.com/50x50" alt="">
+                          </div>
+                          <div class="posted-comment-for-sort" style="background-color: none;">
+                            <div class="posted-comment">
+                            <div class="user-nickname"><h3>ReYanDe</h3> <p>два дня назад</p></div>
+                            <div class="comment-text"><p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, neque?</p></div>
+                            </div>
+                            <div class="like-dislike-answers-this-comment">
+                            <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                            <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                            <a href="#"><img src="images/answer.svg" alt=""></a>
+                            <a href="#"><img src="images/chat.svg" alt=""></a>
+                            </div>
+                          </div>
+                          </div>
+                
+                          <div class="posted-comment-container-not-main">
+                          <div class="avatarka">
+                            <img src="https://via.placeholder.com/50x50" alt="">
+                          </div>
+                          <div class="posted-comment-for-sort" style="background-color: none;">
+                            <div class="posted-comment">
+                            <div class="user-nickname"><h3>ReYanDe</h3> <p>два дня назад</p></div>
+                            <div class="comment-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus vel facilis fuga? Fugit expedita, ad ut quod vel eaque eligendi! Eveniet amet ducimus, dolor quasi maxime nesciunt quod commodi sint veritatis consequatur accusamus explicabo assumenda nulla sequi consequuntur nostrum enim quibusdam minus laudantium quidem maiores. Dolore consequuntur asperiores assumenda vel?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, neque?</p></div>
+                            </div>
+                            <div class="like-dislike-answers-this-comment">
+                            <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                            <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                            <a href="#"><img src="images/answer.svg" alt=""></a>
+                            <a href="#"><img src="images/chat.svg" alt=""></a>
+                            </div>
+                          </div>
+                          </div>
+                  
+                          <div class="posted-comment-container-not-main">
+                          <div class="avatarka">
+                            <img src="https://via.placeholder.com/50x50" alt="">
+                          </div>
+                          <div class="posted-comment-for-sort" style="background-color: none;">
+                            <div class="posted-comment">
+                            <div class="user-nickname"><h3>ReYanDe</h3> <p>два дня назад</p></div>
+                            <div class="comment-text"><p>Lorem ipsum dolor sit amet consectetur</p></div>
+                            </div>
+                            <div class="like-dislike-answers-this-comment">
+                            <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                            <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                            <a href="#"><img src="images/answer.svg" alt=""></a>
+                            <a href="#"><img src="images/chat.svg" alt=""></a>
+                            </div>
+                          </div>
+                          </div>
+                  
+                          <div class="posted-comment-container-not-main">
+                          <div class="avatarka">
+                            <img src="https://via.placeholder.com/50x50" alt="">
+                          </div>
+                          <div class="posted-comment-for-sort" style="background-color: none;">
+                            <div class="posted-comment">
+                            <div class="user-nickname"><h3>ReYanDe</h3> <p>два дня назад</p></div>
+                            <div class="comment-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nam blanditiis quia sit maiores numquam provident ad alias temporibus modi. ipsum dolor sit amet consectetur adipisicing elit. Odio, neque?</p></div>
+                            </div>
+                            <div class="like-dislike-answers-this-comment">
+                            <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                            <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                            <a href="#"><img src="images/answer.svg" alt=""></a>
+                            <a href="#"><img src="images/chat.svg" alt=""></a>
+                            </div>
+                          </div>
+                      </div>
+
+
+
+
+                    </div>
+                    </div>
+
+                      <div class="right-col">
+                  <div class="right-col-padding">
+                    <div class="info-and-add">
+                      <h2>Похожее</h2>
+                        <a href="#">Добавить</a>
+                    </div>
+  
+                    <div class="similar">
+                      <div class="img">
+                        <img src="https://via.placeholder.com/80x130" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Название книги </h2>
+                        <p>Похож по рисовке, жанре, сюжете</p>
+                        <div class="like-and-dislike">
+                          <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                          <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+<div class="similar">
+                      <div class="img">
+                        <img src="https://via.placeholder.com/80x130" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Название книги </h2>
+                        <p>Похож по рисовке, жанре, сюжете</p>
+                        <div class="like-and-dislike">
+                          <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                          <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+<div class="similar">
+                      <div class="img">
+                        <img src="https://via.placeholder.com/80x130" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Название книги </h2>
+                        <p>Похож по рисовке, жанре, сюжете</p>
+                        <div class="like-and-dislike">
+                          <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                          <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+<div class="similar">
+                      <div class="img">
+                        <img src="https://via.placeholder.com/80x130" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Название книги </h2>
+                        <p>Похож по рисовке, жанре, сюжете</p>
+                        <div class="like-and-dislike">
+                          <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                          <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+<div class="similar">
+                      <div class="img">
+                        <img src="https://via.placeholder.com/80x130" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Название книги </h2>
+                        <p>Похож по рисовке, жанре, сюжете</p>
+                        <div class="like-and-dislike">
+                          <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                          <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                          
+                        </div>
+                      </div>
+
+                  </div>
+<div class="similar">
+                      <div class="img">
+                        <img src="https://via.placeholder.com/80x130" alt="">
+                      </div>
+                      <div class="info">
+                        <h2>Название книги </h2>
+                        <p>Похож по рисовке, жанре, сюжете</p>
+                        <div class="like-and-dislike">
+                          <a href="#"><img src="images/thumbs-up.svg" alt=""></a><p>2130</p>
+                          <a href="#"><img src="images/thumbs-down.svg" alt=""></a>
+                          
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>    
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+

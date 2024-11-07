@@ -1,0 +1,671 @@
+<!-- мне просто интерестно будущий я через сколько дней я закончил весртать шаблон? -->
+ <!-- прошлo 4 месяца я еще не закончил :) -->
+
+{% extends "base.html" %}
+{% load static  %}
+
+
+    {% block title %}Электронная библиотека{% endblock title %}
+    {% block styles %}
+    <link rel="stylesheet" href="{% static "styles/style.css" %} ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    {% endblock styles %}
+    
+
+
+{% block content %}
+
+<main>
+  <div class="first-section">
+    <div class="section">
+        <div class="catalog" id="recent-updates">
+
+          <!-- тег а предназначен для перенаправления по нажатию на всю карточку -->
+          {% for item in title %} 
+          <a href="book-page.html">
+             <div class="book-card">
+               <img
+                 src="{{item.images.url}}"
+                 alt="Название книги 1"
+                 style="width: 200px; height: 300px;"
+               />
+               <div class="details">
+                 <h2>{{item.title}}</h2>
+                 <div class="genres">
+                   <a href="#" class="genres-tag-a">Романтика</a>, <a href="#" class="genres-tag-a">Мистика</a>,
+                   <a href="#" class="genres-tag-a">Детектив</a>
+                 </div>
+                 <p>{{item.description}}</p>
+               </div>
+               <div class="footer">
+                 <div class="date">{{item.posted_date}}</div>
+                 <div class="likes"><i class="fas fa-heart"></i>{{item.like }}</div>
+               </div>
+             </div>
+           </a>
+           {% endfor %}
+
+        <a href="book-page.html">
+             <div class="book-card">
+               <img
+                 src="https://via.placeholder.com/200x300"
+                 alt="Название книги 1"
+               />
+               <div class="details">
+                 <h2>Название книги 1</h2>
+                 <div class="genres">
+                   <a href="#" class="genres-tag-a">Романтика</a>, <a href="#" class="genres-tag-a">Мистика</a>,
+                   <a href="#" class="genres-tag-a">Детектив</a>
+                 </div>
+                 <p>Краткое описание книги 1</p>
+               </div>
+               <div class="footer">
+                 <div class="date">2024-06-01</div>
+                 <div class="likes"><i class="fas fa-heart"></i> 10</div>
+               </div>
+             </div>
+           </a>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="second-section">
+
+      <div class="recent-updates">
+        <div class="section">
+          <h2>Горячие новинки</h2>
+          <div class="catalog" id="popular-books">
+           <a href="book-page.html">
+             <div class="book-card">
+               <img
+                 src="https://via.placeholder.com/200x300"
+                 alt="Название книги 1"
+               />
+               <div class="details">
+                 <h2>Название книги 1</h2>
+                 <div class="genres">
+                   <a href="#" class="genres-tag-a">Романтика</a>, <a href="#" class="genres-tag-a">Мистика</a>,
+                   <a href="#" class="genres-tag-a">Детектив</a>
+                 </div>
+                 <p>Краткое описание книги 1</p>
+               </div>
+               <div class="footer">
+                 <div class="date">2024-06-01</div>
+                 <div class="likes"><i class="fas fa-heart"></i> 10</div>
+               </div>
+             </div>
+           </a>
+          <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+          <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="card-book-sort-h2"><a href="#">Новый сезон<svg class="SvgIcon_root__n_a0S mb-0.5 ml-2" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></a></h2>
+            
+            <!-- бля абдулазизик не запутайся этот тег а предназначен для ссылки по нажатия на которой будет воспроизводится перенаправление по ссылке -->
+            <a href="book-page.html">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="book-page.html">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="book-page.html">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            
+          </div>
+          <div class="col">
+            <h2 class="card-book-sort-h2"><a href="#">В тренде<svg class="SvgIcon_root__n_a0S mb-0.5 ml-2" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></a></h2>
+              <!-- тут тожессылка на это через тег а -->
+            <a href="book-page.html">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            
+          </div>
+          <div class="col">
+            <h2 class="card-book-sort-h2"><a href="#">Популярные сегодня<svg class="SvgIcon_root__n_a0S mb-0.5 ml-2" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg></a></h2>
+            <!-- думаю тут уже нет смысла обяснять что делать  -->
+            <a href="book-page.html">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            <a href="#">
+              <div class="card-book">
+                  <img src="https://via.placeholder.com/200x300" alt="Книга">
+                <div class="card-book-information">
+                  <h2>Название книги</h2>
+                  <div class="genres"> <p>Жанры:
+                 <a href="#" class="genres-tag-a">Романтика</a>, <a href="#"class="genres-tag-a">Мистика</a>,
+                 <a href="#"class="genres-tag-a">Детектив</a> <a href="#"class="genres-tag-a">Сверхестественное</a></p>
+               </div>
+                  </div>
+                  <p>роман</p>
+            </div>
+            </a>
+            
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div class="popular-novelas">
+              <div class="section">
+                <h2>Популярные новеллы</h2>
+                <div class="catalog" id="new-releases">
+          <a href="#">
+             <div class="book-card">
+               <img
+                 src="https://via.placeholder.com/200x300"
+                 alt="Название книги 1"
+               />
+               <div class="details">
+                 <h2>Название книги 1</h2>
+                 <div class="genres">
+                   <a href="#" class="genres-tag-a">Романтика</a>, <a href="#" class="genres-tag-a">Мистика</a>,
+                   <a href="#" class="genres-tag-a">Детектив</a>
+                 </div>
+                 <p>Краткое описание книги 1</p>
+               </div>
+               <div class="footer">
+                 <div class="date">2024-06-01</div>
+                 <div class="likes"><i class="fas fa-heart"></i> 10</div>
+               </div>
+             </div>
+           </a>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>+
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+                    <div class="book-card">
+            <img
+              src="https://via.placeholder.com/200x300"
+              alt="Название книги 1"
+            />
+            <div class="details">
+              <h3>Название книги 1</h3>
+              <div class="genres">
+                <a href="#">Романтика</a>, <a href="#">Мистика</a>,
+                <a href="#">Детектив</a>
+              </div>
+              <p>Краткое описание книги 1</p>
+            </div>
+            <div class="footer">
+              <div class="date">2024-06-01</div>
+              <div class="likes"><i class="fas fa-heart"></i> 10</div>
+            </div>
+          </div>
+          
+                </div>
+              </div>
+        </div>
+
+    </div>
+</main>
+
+{% endblock content %}
+
+
+
+
+
+
+
+
+  {% block scripts %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  {% endblock scripts %}  
+
